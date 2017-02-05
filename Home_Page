@@ -1,0 +1,108 @@
+
+<html>
+
+
+<body>
+
+<div id="header" style='color: black; background-color: #00FF89; width: 100%; height: 40px; border-radius: 5px;' >
+    <font size="3">
+       <center>
+          <h1>Website Homepage</h1>
+       </center>
+    </font>
+</div>
+
+<style>
+.column {
+    color: #00FF89;
+    background-color: black;
+    width:100%;
+    height:350px;
+    border-radius: 5px;
+}
+.fire {
+    position: absolute;
+    left: 40px;
+    top: 420px;
+    margin-left: 40px;
+    height: 400px;
+    width:800px;
+    border-radius: 5px;
+}
+#box {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    width: 90px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #00FF89;
+}
+#div1 {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    width: 90px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #00FF89;
+}
+#div2 {
+    position: absolute;
+    left: 20px;
+    top: 210px;
+    width: 90px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid black;
+}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<body>
+
+<div class='column'>
+   <br>
+   <center> <img src='book.jpg' width=auto height='300'> <img src='musicnote.jpg' width=auto height='300'></center>
+</div>
+
+<div class='fire'>
+   <img src='bluefire.jpg' width='1650' height='400'>
+</div>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="torch2.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="auto">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id='box'>
+     <img src='torch.jpg' width='88' height=auto>
+</div>
+
+<div id="Page" style='color: #006699; background-color: #00FF89; width: 60px; height: 60px; border-radius: 10px;' >
+   <center>   
+      <a href="Sam's Room">Room</a>
+   </center>
+   <center>   
+      <a href="poems.html">Poems</a>
+   </center>
+   <center>   
+      <a href="Page_2.html">Closet</a>
+   </center>
+</div>
+</body>
+
+</html>

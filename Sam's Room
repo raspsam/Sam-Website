@@ -1,0 +1,219 @@
+<html>
+
+<head>
+<script src='jquery-2.2.0.min.js' ></script>
+<script type="text/javascript">
+    function run(){
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1;
+        var yyyy = today.getFullYear();
+        if(dd<10)
+	    dd = '0' + dd;
+        if (mm<10)
+	    mm = '0' + mm;
+        today = mm + '-' + dd + '-' + yyyy;
+        $('#toolbar').text('Today is: ' + today).slideDown('slow');
+    }
+
+$(document).ready(run);
+</script>
+ 
+<style>
+   #back{
+       color: #00FF89;
+   }
+   #toolbar {
+      display: none;
+      padding: 20px;
+      border: 2px solid #00FF89;
+      position: absolute;
+      right: 20px;
+      top: 100px;
+      height: 0px;
+      width: 15%;
+   }
+   #titles {
+      padding: 20px;
+      border: 3px solid #00FF89;
+      position: absolute;
+      right: 20px;
+      top: 520px;
+      height: 500px;
+      width: 25%;
+   }
+   #poem {
+      padding: 20px;
+      border: 3px solid #00FF89;
+      position: absolute;
+      left: 20px;
+      top: 520px;
+      height: 500px;
+      width: 25%;
+   }
+   #title {
+      font-size: 30px;
+   }
+   @media screen and (max-width: 1000px) {
+      #title {
+         font-size: 20px;
+      }
+      #poem {
+         font-size: 14px;
+      }
+      #titles {
+         font-size: 14px;
+      }
+   }
+   #let_wrap {
+      width: 100%;
+   }
+   .let {
+      height: auto;
+      width: 25%;
+   }
+
+</style>
+
+</head>
+
+
+<body>
+<div id='back' style='background-color: Black; width: 100%;' >
+
+   <center>
+       <div id='title' >
+           This is the Website of 
+           <b><u>
+             Samuel!
+           </b></u>
+           <br>
+           Enter at your own risk!
+           <br>
+       </div>
+       <br><br><br>
+       <div id='let_wrap' >
+          <img class='let' src="S.jpg" alt="Fire_S" >
+          <img class='let' src="A.jpg" alt="Fire_S" >
+          <img class='let' src="M.jpg" alt="Fire_S" >
+       </div><!-- let wrap -->
+   </center>
+
+   <div id='toolbar' >
+       
+   </div>
+
+   <div id='poem' >
+      <h3>
+          Your Grace
+      </h3>
+      They cast me out into the night.
+      <br>
+      I know not where and cannot fight.
+      <br>
+      What benefits I did possess
+      <br>
+      were snatched away with my address.
+      <br>
+      <br>
+      I do not need to reason why.
+      <br>
+      The fact remains that I will die.
+      <br>
+      Left alone in hidden fire
+      <br>
+      (Not a thing that I desire).
+      <br>
+      <br>
+      Who would consider saving me-
+      <br>
+      A wretch, a wreck identity?
+      <br>
+      Lord, take pity on my behalf.
+      <br>
+      Save me from the enemy wrath.
+      <br>
+      <br>
+      Drop your hand into the flame.
+      <br>
+      Quench the heat and make it tame.
+      <br>
+      My hope rests solely in your grace
+      <br>
+      and at love's mention, see your face.
+      <br>
+      <br>
+      -Samuel
+      <br>
+      <br>
+
+      <div id="poems" style='color: Black; background-color: #00FF89; width: 120px; height: 20px; border-radius: 10px;' >
+          <center>
+              <a href='poems.html' >Poems</a>
+          </center>
+      </div>
+   </div>
+
+   <div id='titles' >
+       <h3>
+           Current Titles:
+       </h3>
+       <u>Name:</u>
+       <br>
+       Samuel
+       <br>
+       <br>
+       <u>Letter titles:</u>
+       <br>
+       -Chief Provoker and Time Consumer
+       <br>
+       -Captain Plain and Obvious
+       <br>
+       -Nuisance Chairman by Election
+       <br>
+       -Director of the Jester Association
+       <br>
+       -Brother and Best Friend of Entertainment
+       <br>
+       -Observer and Addresser of Common Annoyances
+       <br>
+       -Unsurpassed Impersonator and Imitator
+       <br>
+       -Head Honcho Humorist
+       <br>
+       <br>
+       <u>Selfgiven Name:</u>
+       <br>
+       Aodhan <i>(Celtic; Means: Fire)</i>
+       <br>
+       <br>
+       <u>Trail Name:</u>
+       <br>
+       Tree Rat
+       <br>
+       <br>
+       <u>Spanish Name:</u>
+       <br>
+       Leo
+       <br>
+
+   </div>
+
+</div>
+
+<div id='ground' style='background-color: Black; width: 100%; height: 680px;' >
+
+    <center><img src="Dragon.jpg" alt="Dragon" style="width:40%;height:auto;"></center>
+    <br>
+    <center><img src="phoenix1.jpg" alt="Phoenix" style="width:40%;height:auto;"></center>
+
+</div>
+<br>
+<div id="page" style='color: Black; background-color: #00FF89; width: 120px; height: 20px; border-radius: 10px; margin-left: 50%;' >
+<center>
+<a href='Page_2.html' >Page 2</a>
+</center>
+</div>
+</body>
+
+</html>
