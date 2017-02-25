@@ -123,7 +123,7 @@
  					rtn = rtn + 'a chinese water dragon. Ask what that is to learn more.';
  			}
       else if (interp.subject === 'dragon'){
-        rtn = 'Chinese water dragon is a species of agamid lizard native to China and mainland Southeast Asia. It is also known as Asian water dragon, Thai water dragon, and green water dragon (Wikipedia). <br> Scientific name: Physignathus cocincinus <br> Higher classification: Physignathus <br> Rank: Species'
+        rtn = 'Chinese water dragon is a species of agamid lizard native to China and mainland Southeast Asia. It is also known as Asian water dragon, Thai water dragon, and green water dragon. <br> Scientific name: Physignathus cocincinus <br> Higher classification: Physignathus <br> Rank: Species <br> (Direct quote from Wikipedia)'
       }
 			else if (interp.subject === 'my'){
  				if (interp.extra === 'name'){
@@ -168,7 +168,7 @@
  			rtn = 'Because they have eight wheels and four people on them, and four plus eight is twelve, and there are twelve inches in a foot, and one foot is a ruler, and Queen Elizabeth was a ruler, and Queen Elizabeth was also a ship, and the ship sailed the seas, and in the seas are fish, and fish have fins, and the Finns fought the Russians, and the Russians are red, and fire trucks are always "russian" around.';
  			}
  			else if (interp.subject === 'you'){
- 				if (interp.extra === 'green')
+ 				if (interp.extra === 'orange')
  					rtn = 'I did not choose my eye color.';
  				else 
  					rtn = 'Do not question my choices.';
@@ -334,7 +334,7 @@
 			question: ['who', 'what', 'when', 'where', 'why', 'how', 'can', 'do'],
   			subject: ['you', 'i', 'samuel', 'my', 'laurel', 'josh', 'noah', 'chloe', 'elizabeth', 'peter', 'lazarus', 'your', 'date', 'dragon'],
   			female: ['chloe', 'elizabeth', 'laurel'],
- 			extra: ['wearing', 'firetrucks', 'food', 'name', 'bedtime', 'green', 'old', 'hello', 'hi', 'are', 'want', 'have', 'bother'],
+ 			extra: ['wearing', 'firetrucks', 'food', 'name', 'bedtime', 'orange', 'old', 'hello', 'hi', 'are', 'want', 'have', 'bother'],
   			contradiction: ['not']
   		};
   		word = '';
@@ -363,7 +363,7 @@
  </script>
  
  </head>
- <div id='back' style='background-color: #00FF89; width: 99%;' >
+ <div id='back' style='background-color: grey; width: 100%;' >
  <body>
  <center>
  <br>
@@ -376,7 +376,7 @@
   <br>
   
  <form id="in" action="">
- <input type="text" value="" style="width: 250px; font-size: 16px;" />
+ <input type="text" value="" style="width: 250px; font-size: 16px; color: orange;" />
  <button >Ask</button>
  <form/>
  
@@ -385,7 +385,7 @@
  
  <style>
  #response {
-    color: blue;
+    color: orange;
     font-size: 20px;
  }
  </style>
@@ -407,7 +407,7 @@
  <br>
  Why are firetrucks red?
  <br>
- Why are you green?
+ Why are you orange?
  <br>
  How are you?
  <br>
