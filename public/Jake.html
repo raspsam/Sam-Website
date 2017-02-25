@@ -17,7 +17,6 @@
  
  var app = {
  	start: function(){
- 		console.log('Hey, my name is Jake Bot. Ask me a question, please.');
  		
  		$(document).ready(function(){
  			app.listener();
@@ -31,14 +30,10 @@
  			e.preventDefault();
  			var this_object = $(this);
  				text = this_object.find('input').val();
- 				
- 			console.log('You asked: ' + text);
- 			
+
  			var array = app.shatter(text),
  				interp = app.interpret(array);
  				answer = app.answer(interp);
- 				
- 			console.log('interpretted:', interp);
  			$('#response').html(answer);
  		});
  	},
@@ -129,7 +124,7 @@
  			}
 			else if (interp.subject === 'my'){
  				if (interp.extra === 'name'){
- 					rtn = 'Your name...oh, that is a tough one. You see, I talk to hundreds of people a day and one of them asks me who they are. I do not know! Look down and see if you are wearing a name tag. If so that is your name. Beyond that I cannot help you. Sorry.';
+ 					rtn = 'Your name...oh, that is a tough one. You see, I talk to hundreds of people a day and one of them asks me who they are. I do not know! Look down and see if you are wearing a name tag. If so, that is your name. Beyond that I cannot help you. Sorry.';
  				}
  				else
  					rtn = rtn + 'You must discover that for yourself.';
