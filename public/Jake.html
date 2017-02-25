@@ -64,7 +64,7 @@
  	
  	
  	answer_when: function(rtn, interp){
- 			rtn = interp.female ? 'Her ' : 'His ';
+ 			rtn = interp.female ? 'She ' : 'He ';
  			
  			if (interp.subject === 'your'){
  				
@@ -128,7 +128,7 @@
  					rtn = rtn + 'wearing clothes.';
  				}
  				else if (interp.extra === 'name'){
- 					rtn = rtn + interp.subject + '. You just said the name.';
+ 					rtn = rtn + interp.subject + '. You just said the name. Are you trying to trick me?';
  				}
  				else
  					rtn = rtn + 'a mere human.';
@@ -142,7 +142,7 @@
  				rtn = 'I am found only in the far cornners of cyberspace.';
  			}
  			else if (interp.subject === 'i'){
- 				rtn = 'You are sitting in front of me.';
+ 				rtn = 'You are sitting in front of me. You could just look around, you know?';
  			}
  			else if (interp.subject === 'lazarus'){
  				rtn = 'He is in his lizard cage.';
@@ -174,7 +174,7 @@
  	answer_how: function(rtn, interp){
  			if (interp.subject === 'you'){
  				if (interp.extra === 'old'){
- 					rtn = 'I have existed for several days.';
+ 					rtn = 'I have existed for several months.';
  				}
  				else
  					rtn = 'I am as well as a computer robot can be.';
@@ -188,14 +188,14 @@
  			}
  			else if (interp.subject === 'laurel'){
  				if (interp.extra === 'old'){
- 					rtn = 'She is 12.';
+ 					rtn = 'She is 13.';
  				}
  				else
  					rtn = 'I am sure ' + interp.subject + ' is doing just fine.';
  			}
  			else if (interp.subject === 'chloe'){
  				if (interp.extra === 'old'){
- 					rtn = 'She is 10.';
+ 					rtn = 'She is 11.';
  				}
  				else
  					rtn = 'I am sure ' + interp.subject + ' is doing just fine.';
