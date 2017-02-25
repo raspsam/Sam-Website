@@ -91,7 +91,7 @@
  					rtn = 'I am wearing an apple patterned shirt, LG pants, mickey mouse shoes, and glasses.';
  				}
  				else
- 					rtn = 'I am a computer robot.';
+ 					rtn = 'I am a computer robot consisting of mostly if, else if, and else statements. <br> Would you like to see what I look like? <br> If so, type: "Show me what you look like".';
  			
  			}
  			else if (interp.subject === 'date'){
@@ -178,7 +178,18 @@
  				
  		return rtn;
  	},
- 	
+ 	answer_show: function(rtn, interp){
+      if (interp.subject === 'you'){
+        rtn = '<img src="robot.jpg">';
+      }
+      else if (interp.subject === 'lazarus'){
+        rtn = '<img src="dragon.jpg"';
+      }
+      else
+        rtn = 'Specify who you want me to show you. I cannot distigush with the available information.';
+        
+    return rtn;
+  },
  	
  	answer_how: function(rtn, interp){
  			if (interp.subject === 'you'){
@@ -331,7 +342,7 @@
   			contradiction: ''
   		},
   		def = {
-			question: ['who', 'what', 'when', 'where', 'why', 'how', 'can', 'do'],
+			question: ['who', 'what', 'when', 'where', 'why', 'how', 'can', 'do', 'show'],
   			subject: ['you', 'i', 'samuel', 'my', 'laurel', 'josh', 'noah', 'chloe', 'elizabeth', 'peter', 'lazarus', 'your', 'date', 'dragon'],
   			female: ['chloe', 'elizabeth', 'laurel'],
  			extra: ['wearing', 'firetrucks', 'food', 'name', 'bedtime', 'orange', 'old', 'hello', 'hi', 'are', 'want', 'have', 'bother'],
