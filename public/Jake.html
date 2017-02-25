@@ -1,4 +1,4 @@
- <html>
+ <html> //This code was written by Samuel Granderson
  
  <head>
  
@@ -73,7 +73,7 @@
  				rtn = 'Go ask your mother.';
  			}	
  			else if (interp.subject === 'samuel'){
-  				rtn = 'Samuel must go to bed at 8:00.';
+  				rtn = 'Samuel must go to bed at 8:00 like a good little boy.';
   			}	
   			else
 				rtn = rtn + 'has a bedtime that is highly classified.';
@@ -148,13 +148,13 @@
  	answer_where: function(rtn, interp){
  			rtn = interp.female ? 'She is ' : 'He is ';
  			if (interp.subject === 'you'){
- 				rtn = 'I am found only in the far cornners of cyberspace.';
+ 				rtn = 'I am found only in the far cornners of cyberspace and saved on a few flash drives.';
  			}
  			else if (interp.subject === 'i'){
  				rtn = 'You are sitting in front of me. You could just look around, you know?';
  			}
  			else if (interp.subject === 'lazarus'){
- 				rtn = 'He is in his lizard cage.';
+ 				rtn = 'He is in his gigantic lizard cage. He is lying on a branch several feet above his water tub.';
  			}
  			else
  				rtn = rtn + 'in an undisclosed, secure location.';
@@ -258,7 +258,7 @@
 		}
 		else if (interp.subject === 'i'){
 			if (interp.extra === 'bother')
-				rtn = 'Yes.';
+				rtn = 'Yes. Did you even have to ask that? Your question itself was bothersome. ';
 			else 
 				rtn = 'Do not question yourself too much.';
 		}
@@ -367,7 +367,7 @@
  <body>
  <center>
  <br>
- <b>Hello, my name is Jake Bot.</b> 
+ <b>Hello, my name is <u>Jake Bot.</u></b> 
   <br>
   Please, ask me a simple question about someone I know.
   <br>
@@ -415,6 +415,12 @@
  You are how old?
  <br>
  Do I bother people?
+ <br>
+ What is your favorite food?
+ <br>
+ Do you like to bother me?
+ <br>
+ What are you wearing?
 </div>  
   </body>
   
