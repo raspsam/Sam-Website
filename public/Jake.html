@@ -110,7 +110,7 @@
  			}
  			else if (interp.subject === 'i'){
 				if (interp.extra === 'wearing'){
- 					rtn = 'Well, I assume...dearly hope (cross fingers) that you are wearing something. Give me time to work on specifics.';
+ 					rtn = 'Well, I assume...and dearly hope that you are wearing something. Give me time to work on specifics.';
  				}
  				else
  				rtn = 'You are a mere human.';
@@ -120,8 +120,11 @@
  					rtn = rtn + 'not wearing clothes.';
  				}
  				else
- 					rtn = rtn + 'a chinese water dragon.';
+ 					rtn = rtn + 'a chinese water dragon. As what that is to learn more.';
  			}
+      else if (interp.subject === 'dragon'){
+        rtn = 'Chinese water dragon is a species of agamid lizard native to China and mainland Southeast Asia. It is also known as Asian water dragon, Thai water dragon, and green water dragon (Wikipedia). <br> Scientific name: Physignathus cocincinus <br> Higher classification: Physignathus <br> Rank: Species'
+      }
 			else if (interp.subject === 'my'){
  				if (interp.extra === 'name'){
  					rtn = 'Your name...oh, that is a tough one. You see, I talk to hundreds of people a day and one of them asks me who they are. I do not know! Look down and see if you are wearing a name tag. If so, that is your name. Beyond that I cannot help you. Sorry.';
@@ -329,7 +332,7 @@
   		},
   		def = {
 			question: ['who', 'what', 'when', 'where', 'why', 'how', 'can', 'do'],
-  			subject: ['you', 'i', 'samuel', 'my', 'laurel', 'josh', 'noah', 'chloe', 'elizabeth', 'peter', 'lazarus', 'your', 'date'],
+  			subject: ['you', 'i', 'samuel', 'my', 'laurel', 'josh', 'noah', 'chloe', 'elizabeth', 'peter', 'lazarus', 'your', 'date', 'dragon'],
   			female: ['chloe', 'elizabeth', 'laurel'],
  			extra: ['wearing', 'firetrucks', 'food', 'name', 'bedtime', 'green', 'old', 'hello', 'hi', 'are', 'want', 'have', 'bother'],
   			contradiction: ['not']
@@ -360,7 +363,7 @@
  </script>
  
  </head>
- <div id='back' style='background-color: #00FF89; width: 1008px;' >
+ <div id='back' style='background-color: #00FF89; width: 99%;' >
  <body>
  <center>
  <br>
