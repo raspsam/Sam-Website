@@ -232,7 +232,7 @@
  					rtn = 'He is older than his scales and younger than his expiration date.';
  				}
  				else
- 					rtn = 'I am sure ' + interp.subject + 'is having a wonderful time basking.';
+ 					rtn = 'I am sure ' + interp.subject + ' is having a wonderful time basking.';
  			}
  			else
  				rtn = 'Your question is too complicated for my limited understanding. Please, ask simple questions.';
@@ -247,6 +247,9 @@
 			else if (interp.extra === 'have'){
 				rtn = 'I have everything that I need. A power source and a human to talk to.';
 			}
+      else if (interp.extra === 'bother'){
+        rtn = 'Of course not. I can be shut down at your command. Any bothersome activities I accomplish are entierly up to you.';
+      }
 			else
 				rtn = 'There is not much else to know about me.';
 		}
