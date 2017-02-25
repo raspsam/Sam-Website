@@ -288,6 +288,9 @@
  		else if (interp.question === 'when'){
  			rtn = this.answer_when(rtn, interp);
  		}
+    else if (interp.question === 'show'){
+      rtn = this.answer_show(rtn, interp);
+    }
  		else if (interp.question === 'what'){
  			rtn = this.answer_what(rtn, interp);
  		}
@@ -297,15 +300,15 @@
  		else if (interp.question === 'why'){
  			rtn = this.answer_why(rtn, interp);
  		}
-  		else if (interp.question === 'how'){
-  			rtn = this.answer_how(rtn, interp);
-  		}
+  	else if (interp.question === 'how'){
+  		rtn = this.answer_how(rtn, interp);
+  	}
 		else if (interp.question === 'do'){
 			rtn = this.answer_do(rtn, interp);
 		}
-  		else if (interp.question === 'can'){                              //for questions like: 'can you see me?'
-  			rtn = 'Your question is too complicated for my limited understanding. Please, ask simple questions.';
-  		}
+  	else if (interp.question === 'can'){                              //for questions like: 'can you see me?'
+  		rtn = 'Your question is too complicated for my limited understanding. Please, ask simple questions.';
+  	}
  		else if (interp.extra === 'hello'){
  			rtn = 'Hello, human.';
  		}
