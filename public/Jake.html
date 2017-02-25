@@ -114,6 +114,10 @@
  					rtn = 'I do not know.';
  			}
  			else if (interp.subject === 'i'){
+				if (interp.extra === 'wearing'){
+ 					rtn = 'Well, I assume...dearly hope (cross fingers) that you are wearing something. Give me time to work on specifics.';
+ 				}
+ 				else
  				rtn = 'You are a mere human.';
  			}
  			else if (interp.subject === 'lazarus'){
@@ -122,6 +126,13 @@
  				}
  				else
  					rtn = rtn + 'a chinese water dragon.';
+ 			}
+			else if (interp.subject === 'my'){
+ 				if (interp.extra === 'name'){
+ 					rtn = 'Your name...oh, that's a tough one. You see, I talk to hundreds of people a day and one of them asks me who they are. I don't know! Look down and see if you are wearing a name tag. If so that is your name. Beyond that I cannot help you. Sorry.';
+ 				}
+ 				else
+ 					rtn = rtn + 'You must discover that for yourself.';
  			}
  			else 
  				if (interp.extra === 'wearing'){
@@ -406,3 +417,5 @@
   </body>
   
  </html>
+ 			else if (interp.subject === 'lazarus'){
+ 				if (interp.extra === 'wearing'){
